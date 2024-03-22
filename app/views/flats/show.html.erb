@@ -1,0 +1,8 @@
+<img id="map" style="width:30rem" src='https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/2.3381,48.8693,10.45,0,0/600x1000?access_token=pk.eyJ1IjoiaGFsaW1hLTY2IiwiYSI6ImNsc216cG5iazB0ZzkyanIxOHRqOGVjb3cifQ.ZaTOehpOvyLQIeWI0-TOZA'>
+<h1><%= @flat.name %></h1>
+<p><%= @flat.address %></p>
+<p><%= @flat.description %></p>
+<p>guests: <%= @flat.number_of_guests %></p>
+<p>price: <%= @flat.price_per_night %></p>
+ <br/>
+ <%= link_to "Back", flats_path %>

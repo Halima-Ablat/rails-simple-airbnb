@@ -1,0 +1,18 @@
+<br/>
+<br/>
+<h2>Add a flat</h2>
+<%= form_with model: @flat do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :address %>
+  <%= f.text_field :address %>
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+  <%= f.label :price %>
+  <%= f.text_field :price_per_night %>
+  <%= f.label :guests %>
+  <%= f.text_field :number_of_guests %>
+  <%= f.submit %>
+<% end %>
+<br/>
+<%= link_to "Back", flats_path %>
